@@ -1,9 +1,9 @@
 html,
-body{
-    height: 100%;
-    width: 100%;
+body
+{
     padding: 0;
     margin: 0;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -17,9 +17,139 @@ body{
 
 .my-navbar{
     display: block;
+    padding: 0 10vw;
     position: relative;
     align-items: center;
     height: 119px;
-    background-color: rgb(200, 113, 0);
+    background: linear-gradient(to bottom right,#f8492f ,#fe6233 );
 }
 
+.nav-header{
+    padding: 5px 10px;
+    display: flex;
+    height: 28%;
+}
+
+.search-bar-group{
+    display: flex;
+    height: 72%;
+
+}
+
+.nav-opt{
+    display: flex;
+}
+.saler{
+    display: flex;
+    align-items: center;
+}
+
+.sale-option
+{
+    color: white;
+    padding: 0 5px;
+    font-size: 1.6vmin;
+}
+
+.sale-mid
+{
+    border-left: 2px solid #fb7160;
+    border-right: 2px solid #fb7160;
+    padding: 0 7px;
+
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.social-icon{
+    padding: 0 2px;
+}
+
+.right-group
+{
+    font-size: 1.6vmin;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-note
+{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.note-help
+{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.note-icon
+{
+    margin: 0 5px;
+}
+
+.nav-lang
+{
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.down-icon,
+.lang-icon
+{
+    margin: 0 5px;
+}
+
+.cred
+{
+    padding: 0 10px;
+    color: white;
+    border-right: 2px solid #fb7160;
+}
+
+.login
+{
+    border-right: none;
+}
+
+.search-bar-group
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.serach-item
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    flex:2;
+    background-image: url('./imags/ShopPee-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search
+{
+    flex: 6;
+}
+
+.cart
+{
+    flex: 2;
+}
