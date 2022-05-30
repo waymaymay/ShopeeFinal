@@ -1,3 +1,8 @@
+:root
+{
+    font-size: 25px;
+}
+
 html,
 body
 {
@@ -11,6 +16,8 @@ body
 }
 
 .my-layout{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
@@ -186,7 +193,7 @@ body
     font-size: 3vmin;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
 }
 
 .search
@@ -298,7 +305,17 @@ body
 
 @media(max-width: 576px)
 {
+    :root
+    {
+        font-size: 15px;
+    }
+
     .my-navbar{
+        display: none;
+    }
+
+    .my-content
+    {
         display: none;
     }
 
@@ -307,12 +324,36 @@ body
         display: flex;
         align-items: center;
         padding: 5px 10px;
+        height: 25%;
+        margin-top: 15px;
+    }
+
+    .nm-item
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+    }
+
+    .nm-item>i
+    {
+        font-size: 1.6rem;
     }
 
     .mobile-search
     {
         flex: 8;
         height: 100%;
+    }
+
+    .mobile-search>input
+    {
+        width: 90%;
+        height: 85%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
     }
 
     .mobile-cart
@@ -326,5 +367,83 @@ body
         flex:1;
         height: 100%;
     }
-    /*scroll bar has some problem*/
+    
+    .carousel
+    {
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+        height: 24.6vh;
+        background-image: url('https://cf.shopee.tw/file/b90639c965ee98cd8896ae94eda347d3');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .nav-content
+    {
+        flex: 1;
+        
+    }
+
+    .scroll
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+    }
+
+    .up-bar
+    {
+        display: flex;
+        align-items: center;
+        flex: 1;  
+    }
+
+    .down-bar
+    {
+        display: flex;
+        align-items: center;
+        flex:1;
+    }
+
+    .sc-item
+    {
+       display: flex;
+       flex-direction: column;
+       align-items:center;
+       width: 25%;
+       height: 90%;
+       margin: 0 10px;
+    }
+
+    .sc-icon-block
+    {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sc-icon
+    {
+        background-image: url('https://cf.shopee.tw/file/ce50fa24d20a4ede15b274ef9edbb1c9_xhdpi');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+
+    .sc-icon::after
+    {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+    
+
+
 }
