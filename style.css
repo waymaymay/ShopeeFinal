@@ -13,6 +13,7 @@ body
     right: 0;
     bottom: 0;
     left: 0;
+    overflow-x: hidden;
 }
 
 .my-layout{
@@ -20,6 +21,7 @@ body
     flex-direction: column;
     width: 100%;
     height: 100%;
+    background-color: #efefef;
 }
 
 .my-navbar{
@@ -383,7 +385,7 @@ body
     .nav-content
     {
         flex: 1;
-        
+        overflow-x: hidden;
     }
 
     .scroll
@@ -392,7 +394,9 @@ body
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 30%;
+        height: 40%;
+        overflow-x: scroll;
+        background-color: #ed4e2d;
     }
 
     .up-bar
@@ -400,6 +404,7 @@ body
         display: flex;
         align-items: center;
         flex: 1;  
+        max-width: 100%;
     }
 
     .down-bar
@@ -407,6 +412,7 @@ body
         display: flex;
         align-items: center;
         flex:1;
+        max-width: 100%;
     }
 
     .sc-item
@@ -414,9 +420,9 @@ body
        display: flex;
        flex-direction: column;
        align-items:center;
-       width: 25%;
+       width: 25vw;
        height: 90%;
-       margin: 0 10px;
+       margin: 0 6px;
     }
 
     .sc-icon-block
@@ -425,7 +431,7 @@ body
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 7rem;
     }
 
     .sc-icon
@@ -444,6 +450,160 @@ body
         padding-bottom: 100%;
     }
     
+    .sc-text
+    {
+        color: #ffffff;
+    }
+
+    .sale
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 32vh;
+        margin: 20px 0;
+        background-color: #ffffff;
+    }
+
+    .sa-head{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        background-color: #ffffff;
+        align-items: center;
+    }
+
+    .sa-box
+    {
+        display: flex;
+    }
+
+    .sa-prods{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        max-width: 100vw;
+        justify-content: center;
+    }
+
+    .sa-top{
+        background-image: url("https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/flashsale/f8cb6e551cddd82258a98044935f8907.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 20%;
+        margin: 0 15px;
+    }
+    
+    .sa-more{
+        color: #ababab;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .sa-text
+    {
+        margin-right: 5px;
+        font-size: 4vmin;
+    }
+
+    .sa-prod{
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        height: 100%;
+        margin: 10px;
+        position: relative;
+    }
+
+    .sa-prod-img{
+        background-image: url("https://cf.shopee.tw/file/64eb539e438c86f690e1cc0e5c0f09a6_tn");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sa-prod-thing{
+        background-image: url('https://cf.shopee.tw/file/3da5baffaa6ca3a9d5f6f0b2cc6be0f0_tn');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .sa-prod-thing::after{
+        content:'';
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    .sa-prod-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+
+    }
 
 
+    .sa-price{
+        
+        font-size: 4vmin;
+        font-weight:bold;
+        color: #ee3018;
+    }
+
+    .banner
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 25%;
+        height: 25%;
+        background-color: #fcd511;
+    }
+    .banner::after
+    {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0px 17px 10px 17px;
+        border-color: transparent transparent white transparent;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .bn-text
+    {
+        width: 100%;
+        height: calc(100% - 13px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .bn-num
+    {
+        height: 50%;
+        font-size: 2vmin;
+        color:#f8492f
+    }
+
+    .bn-sub-txt
+    {
+        height: 50%;
+        font-size: 2.5vmin;
+        color: #ffffff;
+    }
 }
