@@ -513,7 +513,7 @@ body
     .sa-prod{
         display: flex;
         flex-direction: column;
-        width: 35vw;
+        width: 20vw;
         height: 100%;
         margin: 10px;
         position: relative;
