@@ -11,6 +11,10 @@
 </head>
 <body>
     <div class="my-layout">
+        <div class="mobile"></div>
+        <div class="pc-ipad"></div>
+
+
         <div class="my-navbar">
             <div class="nav-header">
                 <div class="nav-opt nav-social">
@@ -56,7 +60,7 @@
                    </div> -->
                    <div class="input-group">
                     <input type="text" placeholder="註冊獲得全站購物金與免運券！">
-                    <div class="btn-glass">
+                    <div class="btn-glass" id="serach-btn" onclick="popup()">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                    </div>
@@ -76,6 +80,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
                </div>
             </div>
+            
             <div class="pc-scroll">
                 <div class="pc-banners">
                     <div class="pc-l-banners"></div>
@@ -83,12 +88,79 @@
                         <div class="box-up"></div>
                         <div class="box-down"></div>
                     </div>
-                <div class="pc-sale-items">
-                    
                 </div>
+                <div class="pc-short-links">
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">免運！蝦皮直送</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">蝦皮超市</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">領全站9折</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">蝦皮3C家電</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">蝦皮商城</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">領3張全站免運</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">滿$51折$50</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">蝦幣10倍送</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">蝦皮超便宜</div>   
+                    </div>
+
+                    <div class="pc-sale-items">
+                        <div class="pc-sale-block">
+                            <div class="pc-shipping-icon"></div>
+                        </div>            
+                        <div class="pc-sale-text">最強活動合集</div>   
+                    </div>
                                      
-                    
-                </div>
+                </div>                                  
             </div>
         </div>
 
@@ -349,12 +421,26 @@
                 </div>
             </div>
         </div>
+    
+        <div class="pc-content">
+            <div class="pc-"></div>
+            <div class="pc-sals"></div>
+        </div>
     </div>
-    <div class="pc-content">
-        <div class="pc-"></div>
-        <div class="pc-sals"></div>
 
-
-    </div>
 </body>
 </html>
+
+<!-- 
+    one div do only on thing 
+    layout(structure), style, picture, words, ...
+    every things contain in one div
+ -->
+
+<script>
+    var btn = document.getElementById('search-btn');
+    function popup()
+    {
+        alert("btn clicked!")
+    }
+</script>
