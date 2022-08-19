@@ -23,7 +23,7 @@ body
         flex-direction: column;
         width: 100%;
         height: 100%;
-        background-color: #ffffff;
+        background-color: #021f9f;
     }
     
     .my-navbar{
@@ -222,8 +222,6 @@ body
         margin-top: 20px; 
     }
 
-
-
     .btn-glass
     {
         width: 10%;
@@ -260,6 +258,7 @@ body
         outline: none;
         border-radius: 5px;
         width: 100%;
+        font-size: 2.3vmin;
     }
     
     .shortcut-group
@@ -314,11 +313,10 @@ body
         left: 0;
         width:100%;
         height: 50vmin;
-        background-color: transparent;
+        background-color:#2dedc0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color:#ffffff; 
     }
 
     .scroll{
@@ -377,7 +375,7 @@ body
         width: 100%;
         height: 12vmin;
         margin: 0 10px;
-        background-color: #ffffff;
+        background-color: #730c0c;
         display: flex;
         flex: 10;
         flex-direction: row;    
@@ -567,7 +565,7 @@ body
     width: 100%;
     height: 100%;
     display: flex;
-    margin: 350px 0 0 0;
+    margin: 51vmin 0 0 0;
     padding: 0 30px;
     flex-direction: column;
     background-color: #c1c1c1;
@@ -575,10 +573,8 @@ body
 
    .pc-sale-img-box{
     width: 100%;
-    height:20vmin;
-    align-items: center;
-    justify-content: center;
-    padding-top: 80px;
+    height: 30vmin;
+    position: relative;
     
    }
 
@@ -592,8 +588,49 @@ body
    .pc-sale-img::after{
     content: '';
     display: block;
-    padding-bottom: 10%;
+    padding-bottom: 10vmin;
    }
+
+   .pc-topsale-groups{
+    width: 100%;
+    height: 30vmin;
+    background-color: #c3ff53;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 5px 0;
+
+   }
+
+   .pc-topsale-head{
+    background-image: url(https://cf.shopee.tw/file/d690b6e4658a29f03420b090959f01f8);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   }
+
+    .pc-topsale-head::after{
+     content: '';
+     display: block;
+     padding-bottom: 15%;
+    }
+
+    .pc-topsale-content{
+     width: 100%;
+     height: 100%;   
+     background-color: #02859f;
+     padding-top: 0;
+     display: flex;
+     flex-direction: column;
+    }   
+
+    .pc-topsale-tops
+    {
+     width: 100%;
+    }
+    
+ 
 
 
 }
