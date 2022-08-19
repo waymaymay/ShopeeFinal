@@ -578,7 +578,7 @@ body
     height:20vmin;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 80px;
     
    }
 
@@ -611,6 +611,10 @@ body
     }
 
     .my-navbar{
+        display: none;
+    }
+
+    .pc-content{
         display: none;
     }
 
